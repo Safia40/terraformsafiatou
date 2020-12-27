@@ -7,7 +7,7 @@ variable "region" {
 variable "bucketname" {
   description = "mys3bucket"
   type        = string
-  default     = "safias3bucket"
+  default     = "safias3bucket-1"
 }
 
 variable "acl" {
