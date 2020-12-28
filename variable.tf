@@ -28,5 +28,13 @@ variable "secret_key" {
 
 }
 
+variable "cidrblock" {
+    description = "safi vpc cidr block"
+    type = string
+    default = "10.100.0.0/16"
+  
+}
+
+
 
 
