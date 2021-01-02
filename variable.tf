@@ -35,6 +35,21 @@ variable "cidrblock" {
   
 }
 
+variable "sub1cidrblock" {
+  description = "safia subnet1 cidr block"
+  type = string 
+  default = "10.100.1.0/24"
+  
+}
+
+variable "sub2cidrblock" {
+  description = "safia subnet2 cidr block"
+  type = string 
+  default = "10.100.2.0/24"
+  
+}
+
+
 
 
 
