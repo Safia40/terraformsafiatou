@@ -47,8 +47,7 @@ resource "aws_route_table" "privrt" {
 
 resource "aws_route_table_association" "pubrtasso" {
   gateway_id     = aws_internet_gateway.safiavpcigw.id
-  subnet_id      = aws_subnet.safiasubnet1.id
-  route_table_id = aws_route_table.pubrt.id
+   route_table_id = aws_route_table.pubrt.id
 }
 
 
