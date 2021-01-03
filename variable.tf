@@ -29,25 +29,27 @@ variable "secret_key" {
 }
 
 variable "cidrblock" {
-    description = "safi vpc cidr block"
-    type = string
-    default = "10.100.0.0/16"
-  
+  description = "safi vpc cidr block"
+  type        = string
+  default     = "10.100.0.0/16"
+
 }
 
 variable "sub1cidrblock" {
   description = "safia subnet1 cidr block"
-  type = string 
-  default = "10.100.1.0/24"
-  
+  type        = string
+  default     = "10.100.1.0/24"
+
 }
 
 variable "sub2cidrblock" {
   description = "safia subnet2 cidr block"
-  type = string 
-  default = "10.100.2.0/24"
-  
+  type        = string
+  default     = "10.100.2.0/24"
+
 }
+
+
 
 
 

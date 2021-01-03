@@ -29,4 +29,21 @@ resource "aws_internet_gateway" "safiavpcigw" {
   }
 }
 
+resource "aws_route_table" "pubrt" {
+  vpc_id = aws_vpc.safiavpc.id
+
+  tags = {
+    Name = "pubrt"
+  }
+}
+
+resource "aws_route_table" "privrt" {
+  vpc_id = aws_vpc.safiavpc.id
+
+  tags = {
+    Name = "privrt"
+  }
+}
+
+
 
